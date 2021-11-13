@@ -1,0 +1,23 @@
+.input-wrapper {
+    position: relative;
+}
+
+.password {
+    width: 100%;
+    outline: none;
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+
+.bi {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+
+.input-hide {
+    width: 30px;
+    height: 30px;
+    background-color: teal;
+}
