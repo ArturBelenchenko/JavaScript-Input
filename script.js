@@ -1,20 +1,33 @@
-const toggleShowHidePassword = document.querySelectorAll('.bi');
-const passwordInput = document.querySelectorAll('.password');
-// console.log(toggleShowHidePassword)
-toggleShowHidePassword.forEach(element => element.addEventListener('click', function (event) {
-    console.log('click')
+// const toggleShowHidePassword = document.querySelectorAll('.bi');
+// const passwordInput = document.querySelectorAll('.password');
 
-    passwordInput.forEach(function (input) {
-        console.log(input)
-        const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
-        input.setAttribute('type', type)
 
-    });
+// toggleShowHidePassword.forEach(element => element.addEventListener('click', function () {
+    
+    // passwordInput.forEach(function (input) {
+    //     console.log(input)
+    //     const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+    //     input.setAttribute('type', type)
 
-    this.classList.toggle('bi-eye-slash-fill');
+    // });
 
-}));
+    // const siblingInput = this.previousElementSibling
+    // const type = siblingInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    // siblingInput.setAttribute('type', type)
 
-$(document).ready(function() {
-    console.log('jquery is work')
+    // this.classList.toggle('bi-eye-slash-fill');
+// }));
+
+
+
+$('.bi').click(function() {
+    
+    const siblingInput = $(this).prev()
+    siblingInput.attr('type') === 'password' ? 
+    siblingInput.attr('type', 'text') :
+    siblingInput.attr('type', 'password')
+    $(this).toggleClass('bi-eye-slash-fill')
+   
 })
+
+

@@ -1,9 +1,17 @@
+.container {
+    max-width: 940px;
+    width: 100%;
+    margin: auto;
+}
+
 .input-wrapper {
     position: relative;
 }
 
 .password {
     width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
     outline: none;
     border: 2px solid teal;
     border-radius: 5px;
@@ -11,7 +19,7 @@
 
 .bi {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 10px;
     cursor: pointer;
 }
